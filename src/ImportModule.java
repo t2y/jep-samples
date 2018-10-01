@@ -17,9 +17,8 @@ public class ImportModule {
             Integer result1 = jep.getValue("result1", Integer.class);
             System.out.println("add(" + x + ", " + y + ") = " + result1);
 
-            jep.eval("result2 = my_module1.sub(x, y)");
-            Integer result2 = jep.getValue("result2", Integer.class);
-            System.out.println("sub(" + x + ", " + y + ") = " + result2);
+            Object result2 = jep.invoke("my_module1.sub", x, y);
+            System.out.println("sub(" + x + ", " + y + ") = " + result2.toString());
 
             List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
             jep.set("nums", nums);
