@@ -35,6 +35,7 @@ path/to/.virtualenvs/myjep/lib/python3.7/site-packages/jep/libjep.jnilib
 
 ```bash
 (myjep) $ export PYTHONHOME="path/to/.virtualenvs/myjep"
+(myjep) $ export PYTHONPATH="."
 (myjep) $ export LD_LIBRARY_PATH=".:path/to/.virtualenvs/myjep/lib/python3.7/site-packages/jep"
 (myjep) $ java HelloWorld
 Hello World
