@@ -58,3 +58,22 @@ cals([1, 2, 3, 4, 5]) = 15
 add and sub: 6
 calc: 45
 ```
+
+## Confirm run with 3rd party libraries using C Extensions
+
+```bash
+(jep) $ pip install numpy pandas scipy scikit-learn
+(jep) $ pip freeze
+jep==3.8.2
+numpy==1.15.2
+pandas==0.23.4
+python-dateutil==2.7.3
+pytz==2018.5
+scikit-learn==0.20.0
+scipy==1.1.0
+six==1.11.0
+```
+
+```bash
+(jep) $ javac -Xlint:unchecked UseNumPy.java && java UseNumPy
+```
